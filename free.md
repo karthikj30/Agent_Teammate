@@ -153,6 +153,11 @@ site reaches them through the relay.
 3. Under **Environment Variables**, add `VITE_NIRNAYA_RELAY` (your database address) and deploy.
 4. Teammates open the site, press **Join with a code**, and are in your workspace.
 
+The public demo (https://nirnaya-beyondai.vercel.app) also runs the server on Vercel's free plan: a second
+project on this repo with **Root Directory** `backend` (FastAPI, entrypoint `backend/app.py`), and
+`web/vercel.json` forwards `/api` and `/mcp` to it. Its data lives in the function's /tmp, so it is a demo
+that starts fresh after a quiet spell, not a place to keep real work.
+
 Vercel's free Hobby plan is for personal, non-commercial projects
 ([Vercel fair use](https://vercel.com/docs/limits/fair-use-policy)). If Nirnaya will serve a business,
 host the same `web/dist` folder for free on Firebase Hosting, in the project you already have:

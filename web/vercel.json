@@ -5,8 +5,8 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://saying-ink-surely-leon.trycloudflare.com/api/:path*" },
-    { "source": "/mcp", "destination": "https://saying-ink-surely-leon.trycloudflare.com/mcp" },
+    { "source": "/api/:path*", "destination": "https://nirnaya-api.vercel.app/api/:path*" },
+    { "source": "/mcp", "destination": "https://nirnaya-api.vercel.app/mcp" },
     { "source": "/((?!assets/|.*\\.[a-z0-9]+$).*)", "destination": "/index.html" }
   ]
 }
